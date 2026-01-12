@@ -621,4 +621,51 @@ body {
     padding: 10px 22px;
   }
 }
+/* CORREÇÕES DO MOBILE FINAL */
+
+/* 1 — Corrige tamanho exagerado do ícone do WhatsApp */
+.whats-icone, 
+.btn-whats img {
+    width: 32px !important;
+    height: 32px !important;
+}
+
+/* 2 — Ajusta a seção Áreas de Atuação */
+.areas {
+    padding: 60px 20px !important;
+    background: #050608 !important;
+}
+
+.areas h2 {
+    font-size: 2rem !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+}
+
+.areas p, 
+.areas h3 {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+}
+
+/* 3 — Ajustes de espaçamento no bloco de contato */
+.contato {
+    margin-top: 40px !important;
+}
+
+.btn-whats {
+    margin-top: 30px !important;
+}
+
+.contato-centro {
+    padding: 30px 25px !important;
+}
+
+/* 4 — Ajusta espaçamento geral no celular */
+@media (max-width: 900px) {
+    section {
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+}
 
