@@ -99,7 +99,7 @@ body {
   border-radius: 2px;
 }
 
-/* HERO */
+/* HERO DESKTOP */
 .hero {
   background: #060606 url("fundo.png") center/cover no-repeat;
   min-height: 100vh;
@@ -526,12 +526,12 @@ body {
     border: 1px solid rgba(227, 176, 65, 0.3);
   }
 
-  /* HERO mobile */
+  /* HERO mobile – MAIS ESPAÇO NO TOPO */
   .hero {
-    padding-top: 190px;
+    padding-top: 230px;                 /* aumentei para não ficar sob o header */
     padding-bottom: 70px;
     min-height: auto;
-    background-size: contain !important;      /* mostra a imagem inteira */
+    background-size: contain !important;
     background-position: top center !important;
     background-repeat: no-repeat !important;
     background-color: #060606;
@@ -539,15 +539,15 @@ body {
 
   .hero-container {
     width: 100%;
-    padding: 0 24px;                          /* mais espaço nas laterais */
+    padding: 0 24px;
   }
 
   .hero-texto {
-    padding: 0 2px;                           /* evita corte de letras */
+    padding: 0 2px;
   }
 
   .hero-texto h1 {
-    font-size: 2.1rem;                        /* menor no celular */
+    font-size: 2.1rem;
     line-height: 1.2;
   }
 
@@ -576,7 +576,7 @@ body {
 @media (max-width: 480px) {
 
   .hero {
-    padding-top: 180px;
+    padding-top: 220px;                 /* também maior nas telas bem pequenas */
     padding-bottom: 60px;
   }
 
@@ -596,3 +596,4 @@ body {
     padding: 10px 22px;
   }
 }
+
