@@ -85,7 +85,7 @@ img {
   padding: 16px 0 18px;
 }
 
-/* “Pílulas” azul + dourado */
+/* Pílulas azul + dourado */
 .main-nav a {
   color: #ffffff;
   text-decoration: none;
@@ -356,7 +356,7 @@ img {
   box-shadow: 0 18px 38px rgba(0, 0, 0, 0.85);
 }
 
-/* Botão mapa de volta */
+/* Botão mapa */
 
 .btn-map {
   margin-top: 16px;
@@ -407,30 +407,35 @@ img {
     display: none;
   }
 
-  /* Ajuste para mostrar a logo inteira:
-     - card mais à esquerda
-     - logo livre na área central/direita */
+  /* Ajuste p/ mostrar a logo do fundo inteira:
+     - imagem mais à direita
+     - card mais à esquerda e levemente abaixo */
   .hero {
-    min-height: 90vh;
-    background-position: 68% center;
+    min-height: 92vh;
+    background-position: 80% center;   /* empurra a logo para a direita */
+    background-size: cover;
   }
 
   .hero-inner {
     max-width: 1200px;
-    padding: 160px 24px 140px;
+    padding: 200px 24px 160px;
     display: flex;
-    align-items: center;
     justify-content: flex-start;
+    align-items: center;
   }
 
   .hero-content {
     text-align: left;
-    max-width: 480px;
-    margin-left: -140px;   /* puxa o card mais para a esquerda */
+    max-width: 440px;
+    margin: 0;
+    margin-left: -120px;        /* puxa o card para a esquerda */
+    margin-top: 40px;           /* desce um pouco o card */
+    background: rgba(5, 6, 8, 0.82);
+    padding: 34px 28px 38px;
   }
 
   .hero-content h1 {
-    font-size: 2.9rem;
+    font-size: 3rem;
   }
 
   .hero-subtitle {
@@ -463,4 +468,5 @@ img {
     width: 100%;
   }
 }
+
 
