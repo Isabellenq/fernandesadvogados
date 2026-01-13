@@ -10,7 +10,7 @@ body {
 }
 img { max-width: 100%; display: block; }
 
-/* HEADER */
+/* ================= HEADER ================= */
 .site-header {
   position: sticky;
   top: 0;
@@ -73,13 +73,16 @@ img { max-width: 100%; display: block; }
   width: 22px;
   height: 2px;
   background: #ffffff;
-  border-radius: 99px;
+  border-radius: 999px;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero {
   position: relative;
   background: url("fundo.png") center/cover no-repeat;
+  min-height: 100vh;               /* sempre ocupa a tela inteira no desktop */
+  display: flex;
+  align-items: center;             /* centraliza o conteúdo verticalmente */
 }
 
 .hero-overlay {
@@ -87,8 +90,8 @@ img { max-width: 100%; display: block; }
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(0,0,0,.75),
-    rgba(0,0,0,.85)
+    rgba(0,0,0,.78),
+    rgba(0,0,0,.88)
   );
 }
 
@@ -96,7 +99,8 @@ img { max-width: 100%; display: block; }
   position: relative;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 130px 20px 110px;
+  padding: 120px 20px;             /* respiro no topo/baixo */
+  width: 100%;
 }
 
 .hero-content {
@@ -161,7 +165,7 @@ img { max-width: 100%; display: block; }
   transform: translateY(-2px);
 }
 
-/* SECTIONS GERAIS */
+/* =============== SEÇÕES GERAIS =============== */
 .section {
   padding: 70px 20px;
 }
@@ -185,7 +189,7 @@ img { max-width: 100%; display: block; }
   color: #e2e2e2;
 }
 
-/* ÁREAS DE ATUAÇÃO */
+/* =============== ÁREAS DE ATUAÇÃO =============== */
 .areas-grid {
   margin-top: 18px;
   display: grid;
@@ -206,7 +210,7 @@ img { max-width: 100%; display: block; }
   font-size: 1.05rem;
 }
 
-/* CONTATO */
+/* =============== CONTATO =============== */
 .contato-inner {
   text-align: left;
 }
@@ -229,7 +233,6 @@ img { max-width: 100%; display: block; }
   height: 26px;
 }
 
-/* BOTÃO MAPS */
 .btn-map {
   margin-top: 12px;
   padding: 10px 22px;
@@ -248,7 +251,7 @@ img { max-width: 100%; display: block; }
   color: #cccccc;
 }
 
-/* FOOTER */
+/* =============== FOOTER =============== */
 .site-footer {
   padding: 20px;
   text-align: center;
@@ -258,11 +261,10 @@ img { max-width: 100%; display: block; }
   border-top: 1px solid rgba(255,255,255,.12);
 }
 
-/* ========================
-   RESPONSIVO
-======================== */
+/* ================= RESPONSIVO ================= */
 @media (max-width: 900px) {
 
+  /* MENU MOBILE */
   .nav-toggle { display: flex; }
   .main-nav {
     display: none;
@@ -277,6 +279,12 @@ img { max-width: 100%; display: block; }
     border-bottom: 1px solid rgba(255,255,255,.15);
   }
   .main-nav.show { display: flex; }
+
+  /* HERO MOBILE – mantém do jeito que você gostou */
+  .hero {
+    min-height: auto;                 /* não força tela inteira no mobile */
+    align-items: flex-start;
+  }
 
   .hero-inner {
     padding: 110px 22px 80px;
@@ -299,10 +307,12 @@ img { max-width: 100%; display: block; }
     margin-right: auto;
   }
 
+  /* ÁREAS */
   .areas-grid {
     grid-template-columns: 1fr;
   }
 
+  /* CONTATO */
   .contato-inner {
     text-align: left;
   }
