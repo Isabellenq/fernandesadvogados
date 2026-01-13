@@ -85,7 +85,7 @@ img {
   padding: 16px 0 18px;
 }
 
-/* Bordas e fundo atrás de INÍCIO / SOBRE / ATUAÇÃO / CONTATO */
+/* “Pílulas” azul + dourado atrás de INÍCIO / SOBRE / ATUAÇÃO / CONTATO */
 .main-nav a {
   color: #ffffff;
   text-decoration: none;
@@ -95,7 +95,7 @@ img {
   padding: 8px 18px;
   border-radius: 999px;
   border: 1px solid rgba(227, 176, 65, 0.25);   /* dourado suave */
-  background: rgba(8, 20, 48, 0.9);              /* azul bem escuro */
+  background: rgba(8, 20, 48, 0.9);              /* azul escuro */
   transition: 0.2s ease;
 }
 
@@ -137,7 +137,7 @@ img {
   align-items: center;
 }
 
-/* Overlay suave pra logo aparecer ao fundo */
+/* Overlay suave pra logo não sumir */
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -240,11 +240,11 @@ img {
 /* SEÇÕES */
 
 .section {
-  padding: 100px 24px;      /* mais corpo na rolagem */
+  padding: 100px 24px;      /* mais rolagem, não fica tudo colado */
 }
 
 .section:not(:first-of-type) {
-  margin-top: 80px;         /* espaçamento entre blocos */
+  margin-top: 80px;
 }
 
 .section-inner {
@@ -311,7 +311,7 @@ img {
   margin: 0 auto;
 }
 
-/* Destaque no título "Entre em Contato" */
+/* Título Entre em Contato com “pill” azul + dourado */
 .contato-inner h2 {
   display: inline-block;
   padding: 8px 26px;
@@ -322,14 +322,13 @@ img {
   margin-bottom: 22px;
 }
 
-/* 🔧 QUALQUER IMAGEM DENTRO DO CONTATO FICA PEQUENA
-   (isso encolhe esse ícone gigante do Whats) */
+/* QUALQUER imagem grande colocada no contato vira pequena */
 .contato-inner img {
   max-width: 80px;
   margin: 12px auto 0;
 }
 
-/* Botão Whats em destaque */
+/* Botão Whats */
 
 .btn-whats {
   margin-top: 20px;
@@ -356,26 +355,6 @@ img {
   transform: translateY(-2px);
   background: #1fb457;
   box-shadow: 0 18px 38px rgba(0, 0, 0, 0.85);
-}
-
-/* Botão mapa */
-
-.btn-map {
-  margin-top: 16px;
-  padding: 10px 24px;
-  background: #e3b041;
-  color: #050608;
-  border-radius: 999px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.7);
-  font-weight: 600;
-}
-
-.btn-map:hover {
-  background: #c89b35;
-  transform: translateY(-2px);
 }
 
 .contato-endereco {
@@ -409,9 +388,11 @@ img {
     display: none;
   }
 
+  /* Move o fundo para a direita para a logo aparecer mais,
+     e o card não ficar bem em cima */
   .hero {
     min-height: 90vh;
-    background-position: center center;
+    background-position: 72% center; /* puxa a logo mais pra direita */
   }
 
   .hero-overlay {
@@ -419,8 +400,8 @@ img {
       90deg,
       rgba(5, 6, 8, 0.9) 0%,
       rgba(5, 6, 8, 0.65) 28%,
-      rgba(5, 6, 8, 0.3) 55%,
-      rgba(5, 6, 8, 0.05) 100%
+      rgba(5, 6, 8, 0.25) 55%,
+      rgba(5, 6, 8, 0.02) 100%
     );
   }
 
@@ -428,12 +409,13 @@ img {
     padding: 170px 24px 140px;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
   }
 
   .hero-content {
     text-align: left;
-    margin: 0;
     max-width: 520px;
+    margin: 0;
     padding: 26px 26px 30px;
   }
 
@@ -471,4 +453,4 @@ img {
     width: 100%;
   }
 }
-v
+
