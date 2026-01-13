@@ -45,21 +45,26 @@ img {
 .brand {
   display: flex;
   flex-direction: column;
+  gap: 2px;
   line-height: 1.1;
 }
 
 .brand-name {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .brand-sub {
-  font-size: 0.82rem;
-  opacity: 0.85;
-  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #e3b041;
 }
 
+/* NAV (mobile first) */
 .main-nav {
   display: none;
   flex-direction: column;
@@ -115,7 +120,12 @@ img {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, rgba(0,0,0,0.20), rgba(0,0,0,0.85));
+  /* no mobile fica mais escuro por igual */
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.9)
+  );
 }
 
 .hero-inner {
@@ -289,6 +299,7 @@ img {
 
 @media (min-width: 900px) {
 
+  /* NAV desktop */
   .main-nav {
     display: flex;
     flex-direction: row;
@@ -302,9 +313,24 @@ img {
     display: none;
   }
 
+  /* HERO desktop:
+     - lado esquerdo escuro para o texto
+     - lado direito bem mais claro para a logo
+  */
   .hero {
     min-height: 90vh;
     background-position: center center;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(0,0,0,0.90) 0%,
+      rgba(0,0,0,0.78) 28%,
+      rgba(0,0,0,0.55) 48%,
+      rgba(0,0,0,0.30) 68%,
+      rgba(0,0,0,0.08) 100%
+    );
   }
 
   .hero-inner {
@@ -322,8 +348,8 @@ img {
   }
 
   .hero-subtitle {
-    font-size: 1.1rem;
-    max-width: 580px;
+    font-size: 1.08rem;
+    max-width: 560px;
     text-shadow: 0 2px 6px rgba(0,0,0,0.9);
   }
 
@@ -331,20 +357,17 @@ img {
     justify-content: flex-start;
   }
 
-  /* ➜ Deixar a LOGO de fundo bem visível */
-  .hero-overlay {
-    background: radial-gradient(
-      circle at 45% 38%,
-      rgba(0,0,0,0.05),
-      rgba(0,0,0,0.88)
-    );
+  .btn-primary {
+    width: auto;
   }
 
+  /* áreas em 3 colunas */
   .areas-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
+  /* contato centralizado em largura confortável */
   .contato-inner {
     max-width: 620px;
   }
@@ -355,12 +378,11 @@ img {
   }
 }
 
-/* EXTRA MOBILE AJUSTE */
+/* AJUSTEZINHO PRA TELAS MUITO PEQUENAS */
 @media (max-width: 480px) {
   .hero-content h1 {
     font-size: 2.05rem;
   }
 }
-
 
 
