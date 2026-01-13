@@ -369,3 +369,87 @@ img {
     font-size: 1.9rem;
   }
 }
+/* ========== MOBILE OTIMIZADO (ATÉ 899px) ========== */
+@media (max-width: 899px) {
+
+  /* Hero mais claro para destacar logo */
+  .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.18) 0%,
+      rgba(0, 0, 0, 0.35) 40%,
+      rgba(0, 0, 0, 0.55) 100%
+    );
+  }
+
+  /* Imagem mais para cima pra aparecer mais logo */
+  .hero {
+    background-position: center 65%;
+    background-size: 150%;
+  }
+
+  /* Texto mais acima */
+  .hero-inner {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .hero-content {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    line-height: 1.25;
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.7);
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+    opacity: 0.93;
+    line-height: 1.55;
+    margin-bottom: 22px;
+  }
+
+  /* Tags centralizadas e com mais espaçamento */
+  .hero-tags {
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  /* Botão mais elegante no mobile */
+  .btn-primary {
+    padding: 15px 36px;
+    font-size: 1.05rem;
+    border-radius: 35px;
+    margin-top: 18px;
+    background: radial-gradient(circle at 25% 0, #b13810, #6d1800);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.65);
+  }
+
+  /* Deixar a parte inferior mais limpa para logo aparecer */
+  .hero-tags,
+  .btn-primary {
+    position: relative;
+    z-index: 3;
+  }
+
+  /* Aumenta nitidez visual da logo ao fundo */
+  .hero {
+    filter: brightness(1.08) contrast(1.05);
+  }
+}
+
+/* Ajuste extra para CELULARES MUITO PEQUENOS */
+@media (max-width: 480px) {
+  .hero {
+    background-position: center 60%;
+    background-size: 170%;
+  }
+
+  .hero-content h1 {
+    font-size: 1.9rem;
+  }
+}
