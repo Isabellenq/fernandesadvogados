@@ -85,7 +85,7 @@ img {
   padding: 16px 0 18px;
 }
 
-/* “Pílulas” azul + dourado atrás de INÍCIO / SOBRE / ATUAÇÃO / CONTATO */
+/* “Pílulas” azul + dourado */
 .main-nav a {
   color: #ffffff;
   text-decoration: none;
@@ -94,12 +94,11 @@ img {
   text-transform: uppercase;
   padding: 8px 18px;
   border-radius: 999px;
-  border: 1px solid rgba(227, 176, 65, 0.25);   /* dourado suave */
-  background: rgba(8, 20, 48, 0.9);              /* azul escuro */
+  border: 1px solid rgba(227, 176, 65, 0.25);
+  background: rgba(8, 20, 48, 0.9);
   transition: 0.2s ease;
 }
 
-/* Hover elegante */
 .main-nav a:hover,
 .main-nav a:focus-visible {
   border-color: #e3b041;
@@ -240,7 +239,7 @@ img {
 /* SEÇÕES */
 
 .section {
-  padding: 100px 24px;      /* mais rolagem, não fica tudo colado */
+  padding: 100px 24px;
 }
 
 .section:not(:first-of-type) {
@@ -311,7 +310,7 @@ img {
   margin: 0 auto;
 }
 
-/* Título Entre em Contato com “pill” azul + dourado */
+/* Título Entre em Contato com pill */
 .contato-inner h2 {
   display: inline-block;
   padding: 8px 26px;
@@ -322,7 +321,7 @@ img {
   margin-bottom: 22px;
 }
 
-/* QUALQUER imagem grande colocada no contato vira pequena */
+/* Qualquer imagem grande no contato fica pequena */
 .contato-inner img {
   max-width: 80px;
   margin: 12px auto 0;
@@ -343,7 +342,7 @@ img {
   border: 1px solid #e3b041;
 }
 
-/* Ícone do Whats dentro do botão – bem pequeno */
+/* Ícone do Whats pequeno */
 .btn-whats img {
   width: 22px;
   height: 22px;
@@ -355,6 +354,26 @@ img {
   transform: translateY(-2px);
   background: #1fb457;
   box-shadow: 0 18px 38px rgba(0, 0, 0, 0.85);
+}
+
+/* Botão mapa de volta */
+
+.btn-map {
+  margin-top: 16px;
+  padding: 10px 24px;
+  background: #e3b041;
+  color: #050608;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+}
+
+.btn-map:hover {
+  background: #c89b35;
+  transform: translateY(-2px);
 }
 
 .contato-endereco {
@@ -388,25 +407,17 @@ img {
     display: none;
   }
 
-  /* Move o fundo para a direita para a logo aparecer mais,
-     e o card não ficar bem em cima */
+  /* Ajuste para mostrar a logo inteira:
+     - card mais à esquerda
+     - logo livre na área central/direita */
   .hero {
     min-height: 90vh;
-    background-position: 72% center; /* puxa a logo mais pra direita */
-  }
-
-  .hero-overlay {
-    background: linear-gradient(
-      90deg,
-      rgba(5, 6, 8, 0.9) 0%,
-      rgba(5, 6, 8, 0.65) 28%,
-      rgba(5, 6, 8, 0.25) 55%,
-      rgba(5, 6, 8, 0.02) 100%
-    );
+    background-position: 68% center;
   }
 
   .hero-inner {
-    padding: 170px 24px 140px;
+    max-width: 1200px;
+    padding: 160px 24px 140px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -414,9 +425,8 @@ img {
 
   .hero-content {
     text-align: left;
-    max-width: 520px;
-    margin: 0;
-    padding: 26px 26px 30px;
+    max-width: 480px;
+    margin-left: -140px;   /* puxa o card mais para a esquerda */
   }
 
   .hero-content h1 {
