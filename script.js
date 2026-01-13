@@ -6,7 +6,6 @@ if (toggle && nav) {
     nav.classList.toggle("show");
   });
 
-  // Fecha o menu ao clicar em qualquer link
   nav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => nav.classList.remove("show"));
   });
