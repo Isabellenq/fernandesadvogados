@@ -1,166 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fernandes Advogados Associados</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fernandes Advogados Associados</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<header class="site-header">
-    <div class="header-bar">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
 
-        <button class="nav-toggle" aria-label="Abrir menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+      <div class="brand">
+        <span class="brand-name">FERNANDES</span>
+        <span class="brand-sub">Advogados Associados</span>
+      </div>
 
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#areas">Áreas</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+      <button class="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#areas">Atuação</a>
+        <a href="#contato">Contato</a>
+      </nav>
 
     </div>
-</header>
+  </header>
 
-<main>
+  <main>
 
     <!-- HERO -->
-    <section id="inicio" class="hero reveal">
-        <div class="hero-overlay"></div>
+    <section id="inicio" class="hero">
+      <div class="hero-overlay"></div>
 
-        <div class="hero-container">
-            <div class="hero-texto reveal-left">
-                <h1>Advocacia com <span>Excelência</span> e Responsabilidade</h1>
+      <div class="hero-inner">
+        <h1>Advocacia com <span>excelência</span> e responsabilidade</h1>
 
-                <p class="hero-subtitulo">
-                    Atuação estratégica nas áreas Cível, Previdenciária e Trabalhista,
-                    com atendimento humanizado e foco absoluto nos resultados.
-                </p>
+        <p class="hero-subtitle">
+          Atuação estratégica em Direito Civil, Previdenciário e Trabalhista.
+          Atendimento humanizado e foco absoluto nos resultados.
+        </p>
 
-                <div class="hero-selos">
-                    <span class="selo">Campina Grande - PB</span>
-                    <span class="selo">Atendimento Humanizado</span>
-                    <span class="selo">Consultas por Agendamento</span>
-                </div>
-
-                <a href="https://wa.me/5583999413729?text=Olá,%20desejo%20agendar%20uma%20consulta%20jurídica."
-                   target="_blank" class="btn btn-primary">
-                    Agendar Consulta Jurídica
-                </a>
-            </div>
+        <div class="hero-tags">
+          <span class="tag">Campina Grande - PB</span>
+          <span class="tag">Atendimento Humanizado</span>
+          <span class="tag">Consultas por Agendamento</span>
         </div>
+
+        <a href="https://wa.me/5583999413729?text=Olá,%20desejo%20agendar%20uma%20consulta%20jurídica."
+           class="btn btn-primary" target="_blank">
+          Agendar Consulta Jurídica
+        </a>
+      </div>
     </section>
 
     <!-- SOBRE -->
-    <section id="sobre" class="sobre reveal">
-        <div class="container sobre-container">
+    <section id="sobre" class="section">
+      <div class="section-inner">
+        <h2>Sobre o Escritório</h2>
 
-            <div class="sobre-texto reveal-left">
-                <h2>Sobre o Escritório</h2>
+        <p>
+          O Fernandes Advogados Associados atua com ética, profissionalismo e transparência,
+          priorizando a verdade real dos fatos e a defesa firme dos interesses do cliente.
+        </p>
 
-                <p>O Fernandes Advogados Associados atua com ética, profissionalismo e transparência, sempre priorizando a verdade real dos fatos e a defesa firme dos interesses do cliente.</p>
-
-                <p>Nosso compromisso é oferecer atendimento humanizado, estratégico e acessível.</p>
-
-                <div class="sobre-tags">
-                    <span class="tag">Ética</span>
-                    <span class="tag">Humanização</span>
-                    <span class="tag">Estratégia Jurídica</span>
-                </div>
-            </div>
-
-            <div class="sobre-card reveal-right">
-                <div class="sobre-card-topo">
-                    <div class="sobre-avatar">GF</div>
-                    <div>
-                        <strong>Guilherme Fernandes</strong><br>
-                        Advogado Responsável
-                    </div>
-                </div>
-
-                <p>
-                    Com forte atuação nas áreas Cível, Trabalhista e Previdenciária, oferece atendimento objetivo, humano e focado em resultados.
-                </p>
-            </div>
-
-        </div>
+        <p>
+          Nosso compromisso é oferecer atendimento humanizado, linguagem clara,
+          atuação estratégica e acessível para quem precisa.
+        </p>
+      </div>
     </section>
 
     <!-- ÁREAS -->
-    <section id="areas" class="areas reveal">
-        <div class="container">
-            <h2>Áreas de Atuação</h2>
+    <section id="areas" class="section section-alt">
+      <div class="section-inner">
+        <h2>Áreas de Atuação</h2>
 
-            <div class="areas-grid">
+        <div class="areas-grid">
+          <div class="area-card">
+            <h3>Direito Civil</h3>
+            <p>Contratos, indenizações, cobranças e litígios.</p>
+          </div>
 
-                <div class="area-card reveal-scale">
-                    <h3>Direito Civil</h3>
-                    <p>Contratos, indenizações, obrigações e litígios em geral.</p>
-                </div>
+          <div class="area-card">
+            <h3>Direito Previdenciário</h3>
+            <p>Aposentadorias, revisões, benefícios, BPC/LOAS.</p>
+          </div>
 
-                <div class="area-card reveal-scale">
-                    <h3>Direito Previdenciário</h3>
-                    <p>Aposentadorias, revisões, benefícios e BPC/LOAS.</p>
-                </div>
-
-                <div class="area-card reveal-scale">
-                    <h3>Direito Trabalhista</h3>
-                    <p>Verbas rescisórias, adicionais, assédio, insalubridade e demais ações.</p>
-                </div>
-
-            </div>
+          <div class="area-card">
+            <h3>Direito Trabalhista</h3>
+            <p>Verbas, adicionais, assédio, insalubridade e rescisões.</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- CONTATO -->
-    <section id="contato" class="contato reveal">
-        <div class="contato-centro">
+    <section id="contato" class="section">
+      <div class="section-inner contato-inner">
+        <h2>Entre em Contato</h2>
 
-            <h2>Entre em Contato</h2>
+        <p>
+          Atendimento rápido, humanizado e com explicação clara sobre seus direitos.
+        </p>
 
-            <p>
-                Atendimento rápido, humanizado e com explicação clara<br>
-                sobre seus direitos.
-            </p>
+        <a href="https://wa.me/5583999413729"
+           target="_blank"
+           class="btn btn-whats">
+           <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="whats-icon" />
+           WhatsApp: (83) 99941-3729
+        </a>
 
-            <a href="https://wa.me/5583999413729?text=Olá,%20desejo%20falar%20com%20um%20advogado."
-               class="btn btn-whats" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
-                     class="whats-icone" alt="WhatsApp">
-                WhatsApp: (83) 99941-3729
-            </a>
-
-        </div>
+        <p class="contato-endereco">
+          AV Mal. Floriano Peixoto, 715 - Sala 306  
+          Centro, Campina Grande - PB
+        </p>
+      </div>
     </section>
 
-</main>
+  </main>
 
-<footer class="site-footer">
-    <p>© 2025 Fernandes Advogados Associados</p>
+  <footer class="site-footer">
+    © 2025 Fernandes Advogados Associados — Todos os direitos reservados
+  </footer>
 
-    <p class="footer-extra">
-        Atendimento mediante agendamento prévio.<br>
-        📍 AV Mal. Floriano Peixoto, 715 - Sala 306, Centro, Campina Grande - PB, 58400-165, Brasil.
-    </p>
-
-    <!-- BOTÃO GOOGLE MAPS -->
-    <a href="https://www.google.com/maps?q=AV+Mal.+Floriano+Peixoto,+715+-+Sala+306,+Centro,+Campina+Grande+-+PB,+58400-165"
-       target="_blank"
-       class="btn-map">
-        📍 Ver no Google Maps
-    </a>
-
-</footer>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
+
