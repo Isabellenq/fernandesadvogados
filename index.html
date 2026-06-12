@@ -3,158 +3,281 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fernandes Advogados Associados</title>
+
+  <title>Fernandes Advogados Associados | Advocacia em Campina Grande - PB</title>
+  <meta name="description" content="Fernandes Advogados Associados em Campina Grande-PB. OAB/PB 31.778. Atuação em Direito Previdenciário, Trabalhista, Cível, Consumidor, Família e Sucessões, Tributário e Administrativo. Não atuamos em Penal ou Empresarial." />
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <div class="site-bg" aria-hidden="true"></div>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="header-inner">
+  <nav class="navbar" id="navbar">
+    <div class="container nav-content">
+      <a href="#inicio" class="brand" aria-label="Fernandes Advogados Associados">
+        <img src="assets/img/logo-fernandes-white.svg" alt="Fernandes Advogados Associados" />
+      </a>
 
-      <div class="brand">
-        <span class="brand-name">FERNANDES</span>
-        <span class="brand-sub">Advogados Associados</span>
-      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
 
-      <button class="nav-toggle" aria-label="Abrir menu">
-        <span></span><span></span><span></span>
-      </button>
+      <ul class="menu" id="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#escritorio">Escritório</a></li>
+        <li><a href="#areas">Áreas de atuação</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
 
-      <nav class="main-nav">
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#areas">Atuação</a>
-        <a href="#contato">Contato</a>
-      </nav>
-
+      <a class="nav-cta" href="https://wa.me/5583999413729" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
     </div>
-  </header>
+  </nav>
 
   <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-content reveal">
+        <img class="hero-logo" src="assets/img/logo-fernandes-white.svg" alt="Fernandes Advogados Associados" />
 
-    <!-- HERO -->
-    <section id="inicio" class="hero">
-      <div class="hero-overlay"></div>
+        
 
-      <div class="hero-inner">
-        <div class="hero-content">
-          <h1>Advocacia com <span>excelência</span> e responsabilidade</h1>
+        <h1>Advocacia previdenciária com estratégia, ética e atendimento humanizado.</h1>
 
-          <p class="hero-subtitle">
-            Atuação estratégica em Direito Civil, Previdenciário e Trabalhista.
-            Atendimento humanizado e foco absoluto nos resultados.
-          </p>
+        <p>
+          Atuação técnica e personalizada para proteger seus direitos perante o INSS e nas demais áreas do Direito.
+          Soluções jurídicas com compromisso, transparência e respeito à sua história.
+        </p>
 
-          <div class="hero-tags">
-            <span class="tag">Campina Grande - PB</span>
-            <span class="tag">Atendimento Humanizado</span>
-            <span class="tag">Consultas por Agendamento</span>
-          </div>
+        <div class="hero-actions">
+          <a class="btn primary" href="https://wa.me/5583999413729" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+          <a class="btn secondary" href="#areas">Conhecer áreas de atuação</a>
+        </div>
 
-          <a
-            href="https://wa.me/5583999413729?text=Olá,%20desejo%20agendar%20uma%20consulta%20jurídica."
-            class="btn btn-primary"
-            target="_blank"
-            rel="noopener"
-          >
-            Agendar Consulta Jurídica
-          </a>
+        <div class="hero-tags">
+          <span>Previdenciário</span>
+          <i></i>
+          <span>BPC/LOAS</span>
+          <i></i>
+          <span>Aposentadorias</span>
+          <i></i>
+          <span>Benefícios no INSS</span>
         </div>
       </div>
     </section>
 
-    <!-- SOBRE -->
-    <section id="sobre" class="section">
-      <div class="section-inner">
-        <h2>Sobre o Escritório</h2>
+    <section class="stats" aria-label="Diferenciais do escritório">
+      <div class="container stats-grid">
+        <article class="reveal">
+          <strong>01</strong>
+          <h3>Atendimento individualizado</h3>
+          <p>Cada caso é analisado com cuidado, clareza e responsabilidade.</p>
+        </article>
 
-        <p>
-          O Fernandes Advogados Associados atua com ética, profissionalismo e transparência,
-          priorizando a verdade real dos fatos e a defesa firme dos interesses do cliente.
-        </p>
+        <article class="reveal">
+          <strong>02</strong>
+          <h3>Análise técnica e detalhada</h3>
+          <p>Estudo completo dos documentos, prazos, requisitos e possibilidades.</p>
+        </article>
 
-        <p>
-          Nosso compromisso é oferecer atendimento humanizado, linguagem clara,
-          atuação estratégica e acessível para quem precisa.
-        </p>
+        <article class="reveal">
+          <strong>03</strong>
+          <h3>Estratégia administrativa e judicial</h3>
+          <p>Atuação planejada para buscar soluções seguras e eficientes.</p>
+        </article>
       </div>
     </section>
 
-    <!-- ÁREAS -->
-    <section id="areas" class="section section-alt">
-      <div class="section-inner">
-        <h2>Áreas de Atuação</h2>
+    <section class="section" id="escritorio">
+      <div class="container two-columns">
+        <div class="section-heading reveal">
+          <span class="eyebrow">O escritório</span>
+          <h2>Compromisso coletivo com os seus direitos.</h2>
+          <p class="lead">
+            O Fernandes Advogados Associados reúne profissionais dedicados à prestação de serviços jurídicos
+            com seriedade, transparência, responsabilidade e atendimento humanizado.
+          </p>
+        </div>
+
+        <div class="glass-card reveal">
+          <h3>Equipe Jurídica</h3>
+          <p>
+            A coordenação jurídica é exercida por <strong>Guilherme Fernandes Apolinário - OAB/PB 31.778</strong>
+            e conta com advogados associados que atuam em conjunto para oferecer orientação jurídica segura,
+            estratégica e personalizada.
+          </p>
+          <p class="note">
+            A atuação é integrada, com foco em soluções eficientes para pessoas físicas e demandas sensíveis do cotidiano.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section areas-section" id="areas">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Áreas de atuação</span>
+          <h2>Serviços jurídicos</h2>
+          <p class="lead">
+            O escritório possui atuação principal em Direito Previdenciário e também oferece assessoria jurídica nas áreas Trabalhista, Cível, Consumidor, Família e Sucessões, Tributária e Administrativa, sempre com atendimento personalizado e atuação estratégica voltada à proteção dos direitos de seus clientes.
+          </p>
+        </div>
+
+        <div class="subheading reveal">
+          <span>Direito Previdenciário</span>
+        </div>
+
+        <div class="previdenciario-grid">
+          <article class="area-card reveal destaque">
+            <h3>Auxílio-Acidente</h3>
+            <p>Atuação em pedidos administrativos e judiciais de auxílio-acidente, inclusive em casos de redução mínima da capacidade de trabalho após acidente ou sequela consolidada.</p>
+          </article>
+
+          <article class="area-card reveal">
+            <h3>Aposentadorias</h3>
+            <p>Planejamento, concessão e revisão de aposentadorias por idade, tempo de contribuição, invalidez, regras de transição, aposentadoria rural e da pessoa com deficiência.</p>
+          </article>
+
+          <article class="area-card reveal">
+            <h3>Benefícios por Incapacidade</h3>
+            <p>Auxílio-doença, aposentadoria por incapacidade permanente, perícias, documentação médica, qualidade de segurado e carência.</p>
+          </article>
+
+          <article class="area-card reveal">
+            <h3>BPC/LOAS</h3>
+            <p>Benefício assistencial para idosos e pessoas com deficiência, incluindo análise social, renda familiar, impedimentos de longo prazo e recursos.</p>
+          </article>
+
+          <article class="area-card reveal">
+            <h3>Pensão por Morte</h3>
+            <p>Concessão, revisão e restabelecimento de pensão por morte, comprovação de dependência, união estável e qualidade de segurado do falecido.</p>
+          </article>
+
+          <article class="area-card reveal">
+            <h3>Revisão de Benefícios</h3>
+            <p>Verificação de possíveis erros no cálculo, salários utilizados, vínculos, tempo de contribuição, enquadramentos e revisão de renda mensal.</p>
+          </article>
+
+          <article class="area-card reveal">
+            <h3>Recursos no INSS</h3>
+            <p>Elaboração de recursos administrativos, cumprimento de exigências, acompanhamento estratégico e defesa dos direitos do segurado.</p>
+          </article>
+        </div>
+
+        <div class="subheading reveal">
+          <span>Demais áreas de atuação</span>
+        </div>
 
         <div class="areas-grid">
-          <div class="area-card">
-            <h3>Direito Civil</h3>
-            <p>Contratos, indenizações, cobranças e litígios.</p>
-          </div>
-
-          <div class="area-card">
-            <h3>Direito Previdenciário</h3>
-            <p>Aposentadorias, revisões, benefícios e BPC/LOAS.</p>
-          </div>
-
-          <div class="area-card">
+          <article class="area-card reveal">
             <h3>Direito Trabalhista</h3>
-            <p>Verbas, adicionais, assédio, insalubridade e rescisões.</p>
-          </div>
+            <p>Verbas trabalhistas, vínculo de emprego, rescisões, adicionais, horas extras, acordos, estabilidade e reclamações trabalhistas.</p>
+          </article>
+
+          <article class="area-card reveal">
+            <h3>Direito Cível</h3>
+            <p>Contratos, cobranças, indenizações, responsabilidade civil, obrigações, danos materiais, danos morais e medidas judiciais cíveis.</p>
+          </article>
+
+          <article class="area-card reveal">
+            <h3>Direito do Consumidor</h3>
+            <p>Cobranças indevidas, negativação, falha na prestação de serviços, bancos, energia, telefonia, compras e relações de consumo.</p>
+          </article>
+
+          <article class="area-card reveal">
+            <h3>Família e Sucessões</h3>
+            <p>Divórcio, alimentos, guarda, convivência, união estável, inventário, partilha de bens e planejamento familiar.</p>
+          </article>
+
+          <article class="area-card reveal">
+            <h3>Direito Tributário</h3>
+            <p>Débitos fiscais, defesas administrativas, execuções fiscais, regularização de pendências tributárias e orientação fiscal.</p>
+          </article>
+
+          <article class="area-card reveal">
+            <h3>Direito Administrativo</h3>
+            <p>Servidores públicos, concursos, processos administrativos, responsabilidade do Estado e demandas contra entes públicos.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- CONTATO -->
-    <section id="contato" class="section">
-      <div class="section-inner contato-inner">
-        <h2>Entre em Contato</h2>
+    <section class="section map-section" id="localizacao">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Localização</span>
+          <h2>Onde estamos</h2>
+          <p class="lead">Av. Marechal Floriano Peixoto, 715, Sala 306, Centro, Campina Grande - PB, CEP 58400-165</p>
+        </div>
 
-        <p>
-          Atendimento rápido, humanizado e com explicação clara sobre seus direitos.
-        </p>
-
-        <!-- Se você usar uma imagem grande de bolha do Whats aqui,
-             o CSS vai limitar o tamanho -->
-        <!-- <img src="sua-imagem-whats-grande.png" alt="WhatsApp"> -->
-
-        <a
-          href="https://wa.me/5583999413729"
-          target="_blank"
-          rel="noopener"
-          class="btn btn-whats"
-        >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
-            alt="WhatsApp"
-            class="whats-icon"
-          />
-          WhatsApp: (83) 99941-3729
-        </a>
-
-        <a
-          href="https://www.google.com/maps?q=AV+Marechal+Floriano+Peixoto,+715,+Campina+Grande,+PB"
-          target="_blank"
-          rel="noopener"
-          class="btn btn-map"
-        >
-          Ver localização no mapa
-        </a>
-
-        <p class="contato-endereco">
-          AV Mal. Floriano Peixoto, 715 - Sala 306, Centro, Campina Grande - PB
-        </p>
+        <div class="map-box reveal">
+          <iframe
+            title="Mapa Fernandes Advogados Associados"
+            src="https://www.google.com/maps?q=Av.%20Marechal%20Floriano%20Peixoto%20715%20Sala%20306%20Centro%20Campina%20Grande%20PB%2058400165&output=embed"
+            width="100%"
+            height="430"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </div>
     </section>
 
+    <section class="cta-section" id="contato">
+      <div class="container cta-card reveal">
+        <div>
+          <span class="eyebrow">Atendimento</span>
+          <h2>Fale com o escritório</h2>
+          <p>
+            Entre em contato para agendar um atendimento e receber orientação sobre documentos,
+            requisitos e possibilidades do seu caso.
+          </p>
+
+          <div class="contact-lines">
+            <span>OAB/PB 31.778</span>
+            <span>(83) 99941-3729</span>
+            <span>Av. Marechal Floriano Peixoto, 715, Sala 306, Centro, Campina Grande - PB, CEP 58400-165</span>
+          </div>
+        </div>
+
+        <div class="cta-actions">
+          <a class="btn primary" href="https://wa.me/5583999413729" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a class="btn instagram" href="https://www.instagram.com/fernandesadvogadosassoci/" target="_blank" rel="noopener">Abrir Instagram</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    © 2025 Fernandes Advogados Associados — Todos os direitos reservados
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/img/logo-fernandes-white.svg" alt="Fernandes Advogados Associados" />
+        <p>Advocacia com excelência, ética e atendimento humanizado.</p>
+      </div>
+
+      <div>
+        <h4>Coordenação Jurídica</h4>
+        <p>Guilherme Fernandes Apolinário<br>OAB/PB 31.778<br>Advogados Associados</p>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+        <p>
+          WhatsApp: <a href="https://wa.me/5583999413729" target="_blank" rel="noopener">(83) 99941-3729</a><br>
+          Instagram: <a href="https://www.instagram.com/fernandesadvogadosassoci/" target="_blank" rel="noopener">@fernandesadvogadosassoci</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="copy">© 2026 Fernandes Advogados Associados. Todos os direitos reservados.</div>
   </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/5583999413729" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
 
   <script src="script.js"></script>
 </body>
 </html>
-
