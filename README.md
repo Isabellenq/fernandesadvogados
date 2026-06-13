@@ -1,6 +1,6 @@
 # Fernandes Advogados Associados
 
-Site institucional premium para escritório de advocacia em Campina Grande - PB.
+Site institucional  para escritório de advocacia em Campina Grande - PB.
 
 ## Dados inseridos
 
